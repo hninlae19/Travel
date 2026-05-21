@@ -9,6 +9,7 @@
 </head>
 
 <body class="bg-gray-400">
+  <div id="sidebarBackdrop" class="md:hidden hidden fixed inset-0 bg-black/5 backdrop-blur-sm z-40"></div>
 
     <div class="flex min-h-screen">
 
@@ -186,22 +187,32 @@
         const menuBtn = document.getElementById("menuBtn");
         const closeBtn = document.getElementById("closeBtn");
         const sidebar = document.getElementById("sidebar");
+        const sidebarBackdrop = document.getElementById("sidebarBackdrop");
 
-        // Open Sidebar
-        menuBtn.addEventListener("click", () => {
+        function openSidebar() {
             sidebar.classList.remove("left-[-260px]");
             sidebar.classList.add("left-0");
-
+            sidebarBackdrop.classList.remove("hidden");
             menuBtn.innerHTML = "✕";
-        });
+        }
 
-        // Close Sidebar
-        closeBtn.addEventListener("click", () => {
+        function closeSidebar() {
             sidebar.classList.remove("left-0");
             sidebar.classList.add("left-[-260px]");
-
+            sidebarBackdrop.classList.add("hidden");
             menuBtn.innerHTML = "☰";
+        }
+
+        menuBtn.addEventListener("click", () => {
+            if (sidebar.classList.contains("left-0")) {
+                closeSidebar();
+            } else {
+                openSidebar();
+            }
         });
+
+        closeBtn.addEventListener("click", closeSidebar);
+        sidebarBackdrop.addEventListener("click", closeSidebar);
     </script>
 
 </body>
