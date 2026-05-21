@@ -10,41 +10,63 @@
 
 <body class="mx-10 my-8 font-serif">
   <!-- Navbar -->
-  <section class=" gap-6 rounded p-3 my-3 ">
-    <nav class="pb-3 ">
-      <div class="w-full lg:flex md:flex sm:flex-none items-center justify-between">
-        <h1 class="text-4xl font-bold">Jadoo</h1>
-        <button id="menubtn" class="lg:hidden md:hidden  text-3xl ">☰</button>
-        <div id="menu"
-          class="hidden flex-col gap-4 mt-4 lg:flex lg:flex-row lg:items-center lg:gap-6 lg:mt-0 md:flex md:flex-row md:items-center md:gap-6 md:mt-0">
+  <section class="relative group"></section>
+  <div class="absolute rounded-tl-lg rounded-tr-[40px] rounded-bl-[40px] opacity-50 flex h-full w-full justify-end">
+    <img src="images/girl.png" />
+  </div>
+ <section class="gap-6 rounded p-3 my-3">
+  <nav class="pb-3">
+    <div class="w-full flex items-center justify-between">
 
-          <ul class="lg:flex gap-16 md:flex ">
-            <li> <a href="">Desitnations</a></li>
-            <li><a href="">Hotels</a></li>
-            <li><a href="">Flights</a></li>
-            <li><a href="">Bookings</a></li>
-            <li><a href="">Login</a></li>
-
-
-            <li><button class="border  border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white  rounded-lg">
-                <a href="">Sign Up</a>
-              </button></li>
-            <li><select name="" id="">
-                <option value="">EN</option>
-                <option value="">MY</option>
-              </select></li>
-          </ul>
-        </div>
-
+      <div class="text-4xl font-extrabold tracking-tight cursor-pointer text-[#181E4B] flex items-center">
+        Jad
+        <span class="relative inline-block w-5 h-5 mx-[1px] rounded-full bg-black">
+          <span class="absolute inset-[4px] rounded-full bg-[#F1A501]"></span>
+        </span>
+        <span class="relative inline-block w-5 h-5 mx-[1px] rounded-full bg-black">
+          <span class="absolute inset-[4px] rounded-full bg-[#F1A501]"></span>
+        </span>
       </div>
-    </nav>
-  </section>
+
+      <button id="menubtn" class="md:hidden text-3xl">☰</button>
+
+      <div id="menu" class="hidden md:flex flex-col md:flex-row items-center gap-4 md:gap-6 mt-4 md:mt-0">
+        <ul class="flex flex-col md:flex-row items-center gap-6 lg:gap-16 relative z-50">
+          <li><a href="#" class="hover:text-[#F1A501] transition-colors">Destinations</a></li>
+          <li><a href="#" class="hover:text-[#F1A501] transition-colors">Hotels</a></li>
+          <li><a href="#" class="hover:text-[#F1A501] transition-colors">Flights</a></li>
+          <li><a href="#" class="hover:text-[#F1A501] transition-colors">Bookings</a></li>
+          <li><a href="d12Login.html" class="hover:text-[#F1A501] transition-colors">Login</a></li>
+          <li>
+            <a href="d11Register.html" class="border border-[#181E4B] px-4 py-1.5 rounded hover:bg-[#181E4B] hover:text-white transition-colors">Sign Up</a>
+          </li>
+          <li>
+            <select name="language" id="language" class="bg-transparent cursor-pointer outline-none">
+              <option value="en">EN</option>
+              <option value="my">MY</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</section>
+  
   <!-- Travel, enjoy -->
   <section class="grid sm:grid-cols-1 md:grid-cols-2  ">
     <div class=" px-3 py-10">
       <p class="font-sans uppercase text-red-500 font-bold">best destinations around the world</p>
       <h1 class="text-5xl leading-tight font-bold mb-5">
-        Travel, enjoy <br>and live a new <br>and full life
+        Travel, <span class="relative inline-block
+                     bg-[url('images/underline.svg')]
+                     bg-no-repeat
+                      bg-bottom
+                       px-2
+                       pb-6
+                       bg-[length:150%_50px]">
+          enjoy
+        </span> <br>and live a new <br>and full life
       </h1>
       <p class="text-justify mb-7">
         Built Wicket longer admire do barton vanity itself do in it.Prefrred
@@ -53,13 +75,13 @@
       </p>
       <div class="flex gap-5 mt-8">
         <button
-          class="bg-blue-500 hover:bg-blue-700 mt-4 text-white font-bold py-3 px-6 border border-blue-700 rounded-lg">
+          class="bg-blue-500 hover:bg-blue-700  text-white font-bold py-3 px-6 border border-blue-700 rounded-lg">
           Find out more
         </button>
 
         <button class="flex items-center gap-3 hover:text-green-300">
-          <div class="bg-orange-400 w-12 h-12 rounded-full flex items-center  justify-center text-white">
-            ▶
+          <div class=" text-white">
+            <img src="images/play.png" class="w-10 h-10">
           </div>
 
           Play Demo
@@ -67,10 +89,10 @@
       </div>
     </div>
     <div class="">
-      <img src="images/image.png" alt="Destination Image" class="w-full " />
+      <img src="images/girl.png" alt="Destination Image" class="w-full " />
     </div>
   </section>
-<!-- Catagory Part -->
+  <!-- Catagory Part -->
   <section class="my-6  ">
     <div class="text-center">
       <p class="uppercase text-2xl">category</p>
@@ -99,10 +121,10 @@
            text-center
            hover:-translate-y-3
            hover:shadow-2xl
-           transition duration-300">          
+           transition duration-300">
 
           <!-- image 1-->
-           
+
           <img src="images/ante.png" class="w-16 mx-auto mb-6
              transition duration-300
              group-hover:scale-125">
@@ -112,7 +134,7 @@
           </h2>
 
           <p class="text-gray-500 leading-7">
-            Built Wicket longer admire do barton vanity itself do in it. 
+            Built Wicket longer admire do barton vanity itself do in it.
           </p>
         </div>
       </div>
@@ -141,7 +163,7 @@
            transition duration-300">
 
           <!-- image -->
-          <img src="images/ar1.jfif" class="w-16 mx-auto mb-6
+          <img src="images/ar.png" class="w-16 mx-auto mb-6
              transition duration-300
              group-hover:scale-125">
 
@@ -180,7 +202,7 @@
            transition duration-300">
 
           <!-- image -->
-          <img src="images/micp.png" class="w-16 mx-auto mb-6
+          <img src="images/micro.png" class="w-16 mx-auto mb-6
              transition duration-300
              group-hover:scale-125">
 
@@ -244,7 +266,7 @@
     </div>
     <div class="p-4  grid sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-10  mt-3  ">
       <div class="bg-gray-100 rounded-2xl  hover:shadow-2xl">
-        <img src="images/pp.png" alt="Destination Image" class="h-[250px] w-full rounded-t-2xl  " />
+        <img src="images/italy.jfif" alt="Destination Image" class="h-[250px] w-full rounded-t-2xl  " />
         <div class="flex justify-between p-4">
           <h1 class="font-bold m-3">Rome, Italy</h1>
           <p class="m-3">$5,42k</p>
@@ -254,7 +276,7 @@
         </p>
       </div>
       <div class="bg-gray-100 rounded-2xl  text-center hover:shadow-2xl">
-        <img src="images/pp.png" alt="Destination Image" class="h-[250px] w-full rounded-t-2xl" />
+        <img src="images/landon.jfif" alt="Destination Image" class="h-[250px] w-full rounded-t-2xl" />
         <div class="flex justify-between p-4">
           <h1 class="font-bold m-3">London, Uk</h1>
           <p class="m-3">$4,2k</p>
@@ -264,7 +286,7 @@
         </p>
       </div>
       <div class="bg-gray-100 rounded-2xl  text-center hover:shadow-2xl">
-        <img src="images/pp.png" alt="Destination Image" class="h-[250px] w-full rounded-t-2xl" />
+        <img src="images/europe.jfif" alt="Destination Image" class="h-[250px] w-full rounded-t-2xl" />
 
         <div class="flex justify-between p-4">
           <h1 class="font-bold m-3">Full Europe</h1>
@@ -277,7 +299,7 @@
 
   </section>
   <!-- Easy and Fast Section -->
-  <section class="py-10 px-8">
+  <section class="py-10 px-4">
     <div class="grid md:grid-cols-2 gap-16 items-center  mx-auto">
       <!-- Left -->
       <div>
@@ -450,7 +472,7 @@
       <h2 class="text-3xl font-bold text-gray-400">Alitalia</h2>
     </div>
   </section>
-<!-- Subscribe Section -->
+  <!-- Subscribe Section -->
   <section class=" px-8 py-20">
     <div class="relative max-w-5xl mx-auto bg-purple-400 rounded-tl-[40px] p-12 text-center">
       <img src="images/download.jfif" class="w-16 h-16 rounded-full absolute -top-8 -right-8 border-4 border-white" />
@@ -468,8 +490,8 @@
     </div>
     </div>
   </section>
-<!-- Footer -->
-  <footer class="grid md:grid-cols-5 gap-10 px-8 py-16 max-w-7xl mx-auto">
+  <!-- Footer -->
+  <footer class="grid md:grid-cols-5 gap-10 px-8 py-10 max-w-7xl mx-auto">
     <div>
       <h1 class="text-4xl font-bold">Jadoo.</h1>
       <p class="text-gray-500 mt-4">
@@ -487,7 +509,7 @@
       </ul>
     </div>
 
-    <div>
+    <div class="-inset-2">
       <h3 class="font-bold text-xl">Contact</h3>
 
       <ul class="mt-4 space-y-2 text-gray-500">
@@ -516,15 +538,16 @@
       </div>
       <h3 class="font-bold  m-5">Discover our app</h3>
 
-      <div class="flex gap-2  font-white">
-        <div class="flex w-28   bg-black text-white rounded-l-full rounded-r-full ">
+      <div class="flex gap-2  font-white text-sm">
+        <div class="flex w-1/2   bg-black text-white  ">
 
-          <img src="images/pp.jfif" class=" w-10 h-10 rounded-full flex items-center justify-center" /> Play Store
+          <img src="images/pp.jfif" class=" w-10 h-10  flex items-center justify-center" /> Get it on Google Play
 
         </div>
-        <div class="flex  w-28  bg-black text-white rounded-l-full rounded-r-full">
+        <div class="flex  w-1/2  bg-black text-white rounded-l-full rounded-r-full">
 
-          <img src="images/pp.jfif" class=" w-10 h-10 rounded-full flex items-center justify-center" /> App Store
+          <img src="images/pp.jfif" class=" w-10 h-10 rounded-full flex items-center justify-center" /> Available on the
+          Apple Store
 
         </div>
       </div>

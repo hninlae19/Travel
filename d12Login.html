@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex items-center justify-center h-screen bg-slate-400">
+      <div class="bg-white max-w-screen p-6 rounded-xl mt-8 shadow-2xl">
+        <div class="flex flex-col justify-center items-center m-2">
+          <img src="people.png" class="h-12" />
+        </div>
+        <div>
+          <h1 class="text-xl font-bold text-center font-serif">Welcome Back</h1>
+          <label class="text-gray-800 text-center">
+            Enter your credentials to access your account
+          </label>
+        </div>
+        <form class="flex flex-col gap-4 mt-2 space-y-1">
+          <div class="mt-4">
+            <label for="email" class="font-bold">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="name@company.com"
+              class="w-full focus:ring-2 border focus:ring-blue-500 rounded-lg focus:outline-none p-2"
+            />
+          </div>
+          <div class="">
+            <label for="password" class="font-bold">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="******"
+              class="w-full focus:ring-2 border focus:ring-blue-500 rounded-lg focus:outline-none p-2"
+            />
+          </div>
+          <div class="flex">
+            <input type="checkbox" />Remember me
+
+            <a href="" class="text-blue-500 ml-10">Forgot Password?</a>
+          </div>
+          <button
+            class="p-2 bg-blue-700 rounded-lg text-center items-center w-full"
+          >
+            Log In >
+          </button>
+        </form>
+        <p class="text-center mt-2">
+          Don't have an account yet?
+          <a href="d11Register.html" class="text-blue-800 font-bold"
+            >Sign up for free</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

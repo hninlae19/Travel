@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-slate-400 flex items-center justify-center min-h-screen">
+    <div class="bg-white  max-w-md p-6 rounded-lg mt-4 shadow-2xl">
+      <div class="flex flex-col justify-center items-center m-2">
+        <img src="people.png" class="h-12" />
+      </div>
+      <div>
+        <h1 class="text-xl font-bold text-center font-serif">
+          Create Account
+        </h1>
+        <label class="text-lg text-gray-800 text-center">
+          Join us today!It only takes a minute.
+        </label>
+      </div>
+      <form class="flex flex-col gap-4 mt-2 space-y-1">
+        <div class="gap-4  grid sm:grid-cols-1 md:grid-cols-2">
+          <div class="flex flex-col">
+            <label for="name" class="font-bold">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="John Doe"
+              class="w-full focus:ring-2 border focus:ring-blue-500 rounded-lg focus:outline-none  p-2"
+            />
+          </div>
+          <div class="flex flex-col">
+            <label for="email" class="font-bold">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="name@company.com"
+              class="w-full focus:ring-2 border focus:ring-blue-500 rounded-lg focus:outline-none  p-2"
+            />
+          </div>
+        </div>
+        <div class="">
+          <label for="password" class="font-bold">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="******"
+            class="w-full focus:ring-2 border focus:ring-blue-500 rounded-lg focus:outline-none  p-2"
+          />
+        </div>
+        <div class="">
+          <label for="confirm_password" class="font-bold">Confirm Password</label>
+          <input
+            type="password"
+              id="confirm_password"
+            placeholder="******"
+            class="w-full focus:ring-2 border focus:ring-blue-500 rounded-lg focus:outline-none  p-2"
+          />
+        </div class="">
+        <label for="terms" class="flex items-center gap-2">
+          <input type="checkbox" />I agree to the
+          <a href="" class="text-blue-500 underline " id="terms">Terms of Services</a> and
+          <a href="" class="text-blue-500 underline" id="trems">Privacy Policy</a>
+        </label>
+        <button
+          class=" bg-blue-700 rounded-lg  p-2 text-white w-full"
+        >
+          Create My Account >>
+        </button>
+      </form>
+      <p class="text-center mt-2">
+        Already have an account?
+        <a href="index.html" class="text-blue-800 font-bold">Sign in here</a>
+      </p>
+    </div>
+  </body>
+</html>

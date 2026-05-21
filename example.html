@@ -34,8 +34,10 @@
     </div>
     <section class="relative group">
       <div
-        class="absolute w-52 h-52 bg-orange-500 rounded-tl-lg rounded-tr-[40px] rounded-bl-[40px] opacity-50 flex"
-      ></div>
+        class="absolute rounded-tl-lg rounded-tr-[40px] rounded-bl-[40px] opacity-50 flex"
+      >
+        <img src="images/pp.png" />
+      </div>
       <section class="gap-6 rounded p-3 my-3">
         <nav class="pb-3">
           <div
@@ -110,5 +112,38 @@
         </div>
       </section>
     </section>
+
+    <nav class="bg-gray-500 rounded p-4 lg:flex">
+      <!-- top -->
+      <div class="w-full flex items-center justify-between">
+        <h2 class="text-white font-bold text-xl">MyLogo</h2>
+
+        <button id="menu" class="text-white text-3xl lg:hidden">☰</button>
+      </div>
+
+      <!-- nav links -->
+      <div
+        id="navLinks"
+        class="hidden flex-col gap-3 text-black mt-4 lg:flex lg:flex-row lg:mt-0"
+      >
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+    <script>
+      const menu = document.getElementById("menu");
+      const navLinks = document.getElementById("navLinks");
+
+      menu.addEventListener("click", () => {
+        navLinks.classList.toggle("hidden");
+        navLinks.classList.toggle("flex");
+        if (menu.innerHTML === "☰") {
+          menu.innerHTML = "✕";
+        } else {
+          menu.innerHTML = "☰";
+        }
+      });
+    </script>
   </body>
 </html>
