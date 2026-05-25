@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuietMind Dashboard</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-[#f5f3ef] font-sans">
+    <!-- Main Container -->
+    <div class="flex min-h-screen">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-[#efede8] p-6 flex flex-col justify-between">
+        <div>
+          <!-- Logo -->
+          <div class="mb-10">
+            <h1 class="text-2xl font-bold text-green-800">QuietMind</h1>
+            <p class="text-sm text-gray-500">Beginner's Haven</p>
+          </div>
+
+          <!-- Button -->
+          <button
+            class="bg-green-800 text-white px-5 py-3 rounded-full w-full mb-8"
+          >
+            + New Note
+          </button>
+
+          <!-- Menu -->
+          <div class="space-y-3">
+            <div class="bg-green-200 p-3 rounded-lg">📄 Notes</div>
+
+            <div class="p-3">📁 Categories</div>
+          </div>
+
+          <!-- Favorites -->
+          <div class="mt-10">
+            <p class="text-gray-400 text-sm mb-3">FAVORITES</p>
+
+            <ul class="space-y-2 text-gray-700">
+              <li>• Personal</li>
+              <li>• Creative Work</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Menu -->
+        <div class="space-y-4 text-gray-600">
+          <p>⚙️ Settings</p>
+          <p>🗂 Archive</p>
+          <p>❓ Help</p>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-8">
+        <!-- Top Bar -->
+        <div class="flex justify-between items-center mb-10">
+          <!-- Search -->
+          <input
+            type="text"
+            placeholder="Search your thoughts..."
+            class="w-1/2 px-5 py-3 rounded-full bg-white shadow-sm outline-none"
+          />
+
+          <!-- Right -->
+          <div class="flex items-center gap-5">
+            <button class="text-green-800 font-semibold">+ New Note</button>
+
+            <!-- Avatar -->
+            <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+          </div>
+        </div>
+
+        <!-- Welcome -->
+        <div class="mb-8">
+          <h2 class="text-5xl font-bold mb-2">Good morning, Julian.</h2>
+
+          <p class="text-gray-500 text-lg">
+            Take a breath. What's on your mind today?
+          </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-3 gap-6">
+          <!-- Big Card -->
+          <div class="col-span-2 bg-[#f0eeea] rounded-3xl p-8">
+            <div class="flex items-center gap-3 mb-5">
+              <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">
+                Creative Work
+              </span>
+
+              <span class="text-sm text-gray-500"> • 2 hours ago </span>
+            </div>
+
+            <h3 class="text-3xl font-bold mb-4">
+              The Philosophy of Quiet Productivity
+            </h3>
+
+            <p class="text-gray-600 leading-8">
+              In a world that never stops shouting, there is a profound power in
+              finding silence. This morning I’m reflecting on how we can build
+              tools that reward attention...
+            </p>
+          </div>
+
+          <!-- Right Small Card -->
+          <div class="bg-white rounded-3xl p-6">
+            <span class="bg-green-100 text-sm px-3 py-1 rounded-full">
+              Ideas
+            </span>
+
+            <h3 class="text-2xl mt-4 mb-4 font-semibold">
+              Morning Ritual Ideas
+            </h3>
+
+            <ol class="space-y-2 text-gray-600">
+              <li>1. Cold water therapy</li>
+              <li>2. 5 minutes focused breathing</li>
+              <li>3. Tea ceremony without screens</li>
+            </ol>
+          </div>
+
+          <!-- Bottom Card 1 -->
+          <div class="bg-white rounded-3xl overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop"
+              class="h-40 w-full object-cover"
+            />
+            <div class="p-5">
+              <span class="bg-blue-100 px-3 py-1 rounded-full text-sm">
+                Work
+              </span>
+
+              <h3 class="text-2xl mt-4 mb-3 font-semibold">
+                Office Redesign Notes
+              </h3>
+
+              <p class="text-gray-600">
+                Need to prioritize ergonomic comfort and natural light...
+              </p>
+            </div>
+          </div>
+
+          <!-- Bottom Card 2 -->
+          <div class="bg-white rounded-3xl p-6">
+            <span class="bg-pink-100 px-3 py-1 rounded-full text-sm">
+              Personal
+            </span>
+
+            <h3 class="text-2xl mt-4 mb-4 font-semibold">
+              Weekend Grocery List
+            </h3>
+
+            <ul class="text-gray-600 space-y-2">
+              <li>• Fresh ginger & mint</li>
+              <li>• Organic honey</li>
+            </ul>
+          </div>
+
+          <!-- Bottom Card 3 -->
+          <div class="bg-white rounded-3xl p-6">
+            <div class="flex justify-between items-center">
+              <span class="bg-blue-100 px-3 py-1 rounded-full text-sm">
+                Work
+              </span>
+
+              <span class="text-gray-400 text-sm"> Mar 12 </span>
+            </div>
+
+            <h3 class="text-2xl mt-4 mb-4 font-semibold">
+              Project Alpha Review
+            </h3>
+
+            <p class="text-gray-600">
+              The feedback from the initial user group was surprisingly positive
+              regarding the soft-focus UI...
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

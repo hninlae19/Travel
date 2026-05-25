@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiet Mind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-mainBg font-sans m-0 ">
+  <!-- aside bar -->
+  <aside id="sidebar"
+    class="hidden md:flex fixed md:translate-x-0 z-50 top-0 p-3 left-0 h-full min-h-screen w-64 bg-gray-400 flex-col border-r justify-between shrink-0">
+    <div class="flex gap-2">
+      <img src="images/leaf.png" class="h-12" />
+      <div>
+        <h1>Quiet Mind</h1>
+        <p>Beginner's Haven</p>
+      </div>
+    </div>
+    <button
+      class="bg-green-500 hover:bg-green-900 mt-4 mb-2 text-white w-full font-bold py-3 px-6 border rounded-r-full rounded-l-full">
+      + New note
+    </button>
+    <div class="mt-2">
+      <h1>LIBRARY</h1>
+      <a href="#" class="flex hover:bg-green-500 w-full p-2 rounded-lg">
+        <img src="images/note.png" alt="Settings" class="h-6 px-2" />
+        <span>Notes</span>
+      </a>
+      <a href="#" class="flex hover:bg-green-500 w-full p-2 rounded-lg">
+        <img src="images/file.png" alt="Settings" class="h-6 px-2" />
+        <span>Categories</span>
+      </a>
+    </div>
+    <div class="mt-6 flex-1">
+      <h1>FAVORITES</h1>
+      <ul class="p-3">
+        <li><a href=""><span class="text-green-700 text-3xl gap-2">•</span> Personal</a></li>
+        <li><a href=""><span class="text-yellow-700 text-3xl gap-2">•</span>Creative Work</a></li>
+      </ul>
+    </div>
+    <div class=" space-y-1 bg-slate-200 rounded-lg">
+      <a href="#" class="flex gap-2 p-2">
+        <img src="images/set.png" alt="Settings" class="h-4" />
+        <span> Settings</span>
+      </a>
+
+      <a href="#" class="flex gap-2 p-2">
+        <img src="images/achieve.png" alt="Settings" class="h-4" />
+        <span> Arctive</span>
+      </a>
+      <a href="#" class="flex gap-2 p-2">
+        <img src="images/help.png" alt="Settings" class="h-4" />
+        <span> Help</span>
+      </a>
+    </div>
+    </div>
+  </aside>
+  <main class="md:ml-64 bg-pink-200  flex-1 max-w-6xl mx-auto  min-h-screen ">
+    <!-- Mobile new note button -->
+    <button class="md:hidden fixed bottom-5 right-5 z-50 bg-green-500 text-white w-14 h-14 rounded-full shadow-xl flex items-center justify-center text-3xl font-bold">
+      +
+    </button>
+
+    <!-- Top Bar -->
+    <div class="flex justify-between p-4 items-center mb-3 z-10 sticky top-0 left-0 right-0  bg-white ">
+      <!-- Search -->
+      <input type="text" placeholder="Search your thoughts..."
+        class="w-1/2 px-5 py-3 rounded-full bg-white shadow-sm outline-none" />
+
+      <!-- Right -->
+      <div class="flex items-center gap-5 ">
+        <button class="text-green-800 font-semibold hidden md:flex">+ New Note</button>
+
+        <!-- Avatar -->
+        <img src="images/pp.png" class="w-10 h-10 bg-gray-300 rounded-full"></img>
+      </div>
+    </div>
+
+    <!-- Welcome -->
+    <div class="grid  md:grid-cols-3 sm:grid-cols-1 gap-4 mt-2 p-3 ">
+      <div class="md:col-span-2 sm:col-auto">
+        <h2 class="text-3xl font-bold mb-2">Good morning, Julian.</h2>
+        <p class="text-gray-500  mb-2">
+          Take a breath. What's on your mind today?
+        </p>
+      </div>
+
+      <div class="gap-3 sm:gap-x-3">
+        <button class="bg-slate-200 p-2 px-5 rounded-r-full  rounded-l-full ">Recent</button>
+        <button class="bg-slate-200 p-2 px-5 rounded-r-full rounded-l-full ">Layout</button>
+      </div>
+
+
+
+      <!-- Cards Grid -->
+
+      <!-- Big Card -->
+      <div class="md:col-span-2 sm:col-auto bg-[#f0eeea] rounded-3xl p-4">
+        <div class="flex justify-between ">
+          <div>
+            <button class="bg-gray-200 px-2 py-1 rounded-full text-sm hover:scale-105">
+              Creative Work
+            </button>
+
+            <span class="text-sm text-gray-500"> • 2 hours ago </span>
+          </div>
+          <div>
+            <img src="images/leaf.png" class="h-16" />
+          </div>
+        </div>
+
+        <h3 class="text-xl font-bold mb-2">
+          The Philosophy of Quiet Productivity
+        </h3>
+
+        <p class="text-gray-600 leading-8">
+          In a world that never stops shouting, there is a profound power in
+          finding silence. This morning I’m reflecting on how we can build
+          tools that reward attention...
+        </p>
+        <div class="gap-3 mt-4">
+          <button class="bg-blue-200 px-2 py-1 rounded-full text-sm mr-4 hover:scale-105 ">
+            #mindfulness
+          </button>
+          <button class="bg-pink-200 px-2 py-1 rounded-full text-sm hover:scale-105">
+            #design-ethics
+          </button>
+        </div>
+</div>
+
+        <!-- Right Small Card -->
+        <div class="bg-white rounded-3xl p-4">
+          <div class="flex justify-between">
+            <button class="bg-green-100 text-sm px-3 py-1 rounded-full hover:scale-105">
+              Ideas
+            </button>
+            <img src="images/pin.png" class="h-6" />
+          </div>
+          <h3 class="text-xl mt-2 mb-2 font-semibold">
+            Morning Ritual Ideas
+          </h3>
+
+          <ol class="space-y-2 text-gray-600">
+            <li>1. Cold water therapy</li>
+            <li>2. 5 minutes focused breathing</li>
+            <li>3. Tea ceremony without screens</li>
+          </ol>
+          <button class="bg-pink-200 px-2 py-1 rounded-full text-sm hover:scale-105 mt-3">
+            #wellness
+          </button>
+        </div>
+
+        <!-- Bottom Card 1 -->
+        <div class="bg-white rounded-3xl overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop"
+            class="h-24 w-full object-cover" />
+          <div class="relative -mt-14 ml-5 p-5">
+            <button class="bg-green-400 px-4 py-1 rounded-full text-sm hover:scale-105">
+              Work
+            </button>
+
+            <h3 class="text-xl mt-3 mb-1 font-semibold">
+              Office Redesign Notes
+            </h3>
+
+            <p class="text-gray-600">
+              Need to prioritize ergonomic comfort and natural light...
+            </p>
+          </div>
+        </div>
+
+        <!-- Bottom Card 2 -->
+        <div class="bg-white rounded-3xl p-4">
+          <button class="bg-pink-100 px-3 py-1 rounded-full text-sm hover:scale-105">
+            Personal
+          </button>
+
+          <h3 class="text-xl mt-2 mb-2 font-semibold">
+            Weekend Grocery List
+          </h3>
+
+          <ul class="text-gray-600 space-y-2">
+            <li>• Fresh ginger & mint</li>
+            <li>• Organic honey</li>
+          </ul>
+        </div>
+
+        <!-- Bottom Card 3 -->
+        <div class="bg-white rounded-3xl p-4">
+          <div class="flex justify-between items-center">
+            <button class="bg-blue-100 px-2 py-1 rounded-full text-sm hover:scale-105">
+              Work
+            </button>
+
+            <span class="text-gray-400 text-sm"> Mar 12 </span>
+          </div>
+
+          <h3 class="text-xl mt-2 mb-2 font-semibold">
+            Project Alpha Review
+          </h3>
+
+          <p class="text-gray-600">
+            The feedback from the initial user group was surprisingly positive
+            regarding the soft-focus UI...
+          </p>
+        </div>
+
+  </main>
+</body>
+
+</html>
